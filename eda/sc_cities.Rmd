@@ -1,0 +1,46 @@
+---
+title: EDA on Eviction Data from South Carolina's Cities
+author: Usman Khaliq
+date: "`r Sys.Date()`"
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, warning=FALSE}
+# Libraries
+library(tidyverse)
+
+# Parameters
+
+#===============================================================================
+dataset_link <- "/data/sc_cities.rds"
+# Code
+```
+
+## Section 1
+In this analysis, we would like to find out the city in South Carolina which had the most evictions. 
+
+First, let's read the data about the evictions from cities in South Carolina.
+
+```{r}
+city_dataset <- read_rds(here::here(dataset_link))
+glimpse(city_dataset)
+```
+
+```{r}
+city_dataset %>% 
+  arrange(desc(evictions)) %>% 
+  top_n(1, evictions)
+```
+
+The city of North Charleston in South Carolina had the most evictions, at 3660.
+
+
+
+
+

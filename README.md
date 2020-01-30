@@ -1,10 +1,6 @@
 # Project 
 
-This a template for a data analysis project.
+This project is exploring the data on evictions from South Carolina compiled by the [Eviction Lab at Princeton University](https://evictionlab.org/). 
 
-* To create a repo that is a copy, log into GitHub and use the green _Use this template_ button.
-* To create a non-repo, local copy, use _Clone or download_ > _Download ZIP_.
+The project is being replicated as part of a challenge in the Data Challenge Lab 2019 at Stanford University.
 
-An explanation of how to use this project organization can be found in [Project workflow](https://dcl-workflow.stanford.edu/project-workflow.html).
-
-Here is an [example project](https://github.com/dcl-docs/project-example) based upon this template.
